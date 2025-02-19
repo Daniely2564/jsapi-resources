@@ -13,6 +13,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
+          node-version: 22
 
       - name: should create zip files
         id: verify
